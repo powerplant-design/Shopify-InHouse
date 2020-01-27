@@ -1,0 +1,20 @@
+<header id="header-global">
+    <div>
+        <a href="/">{{ 'general.shop.title' | t }}</a>
+
+        {% include 'nav-list', handle: 'main-menu' %}
+    </div>
+    <div>
+        <a href="/cart">{{ 'cart.button.count_html' | t: itemCount: cart.item_count }}</a>
+    </div>
+    <!-- {% if shop.customer_accounts_enabled %}
+    {% if customer %}
+    <a href="/account">account</a>
+    {{ 'log out'  | customer_logout_link }}
+    {% else %}
+    {{ 'log in ' | customer_login_link }}
+    {{ 'register' | customer_register_link }}
+    {% endif %}
+    {% endif %} -->
+
+</header>

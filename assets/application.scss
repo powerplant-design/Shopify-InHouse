@@ -11,3 +11,15 @@ a {
     color: aquamarine;
     font-size: 1.4rem;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    right:0;
+}
+.nav-list {
+    display: inline-block;
+}
